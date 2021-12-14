@@ -1,0 +1,20 @@
+.tab-bar{
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+}
+.tab-bar >li{
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+}
+#app2 .tab-content >li{
+    display: none;
+}
+#app2 .tab-content >li.clicked{
+    display: block;
+}
+#app2 .tab-bar >li.slected{
+    background-color: blue;
+    color: red;
+}

@@ -1,0 +1,92 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+*::after,*::before{box-sizing: border-box;}
+ol,ul{list-style: none;}
+body{
+    overflow: hidden;
+}
+body >.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+body >.page >section{
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tab-bar{
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+}
+.tab-bar >li{
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+}
+#app2 .tab-content >li{
+    display: none;
+}
+#app2 .tab-content >li.clicked{
+    display: block;
+}
+#app2 .tab-bar >li.slected{
+    background-color: blue;
+    color: red;
+}
+#app3 .square{
+    background-color: royalblue;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: transform 1s;
+}
+#app3 .square.clicked{
+    transform: translateX(300px);
+    border-radius: 50%;
+}
+#app4{
+    position: relative;
+}
+#app4 .circle{
+    position: absolute;
+    border: 2px solid black;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+@keyframes change{
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: sandybrown;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: rgb(6, 177, 154);
+    }
+    100% {
+        background-color: blueviolet;
+    }
+}
+#app4 .circle.active{
+animation: change 5s infinite alternate linear;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
